@@ -11,13 +11,13 @@
             <legend>biodata diri</legend>
             <p>Masukkan data dibawah ini dengan benar</p>
             <label for="nama_depan">Nama depan</label>
-            <input type="text" name="nama_depan" id="nama_depan">
+            <input type="text" name="nama_depan" id="nama_depan" required maxlength="10"> 
             <br><br>
             <label for="nama_belakang">nama belakang</label>
-            <input type="text" name="nama_belakang" id="nama_belakang">
+            <input type="text" name="nama_belakang" id="nama_belakang" required> 
             <br><br>
             <label for="tempat lahir">tempat lahir</label>
-            <input type="text" name="tempat lahir" id="tempat lahir">
+            <input type="text" name="tempat lahir" id="tempat lahir" disabled>
             <br><br>
             <label for="tanggal lahir">tanggal lahir</label>
             <input type="date" name="tanggal lahir" id="tanggal lahir">
@@ -30,6 +30,52 @@
                 <input type="radio" name="gender" value="female">perempuan
             </label>
     </fieldset>
+    <fieldset>
+        <legend>AKUN</legend>
+        <label for="email">email</label>
+        <input type="email" name="email" id="email">
+        <br> <br>
+        <label for="username">username</label>
+        <input type="text" name="username" id="username"
+        <br>
+        <label for="password">password</label>
+        <input type="password" name="password" id="password">
+    </fieldset>
+    <fieldset>
+        <legend>HOBI</legend>
+        <label for="membaca">
+         <input type="checkbox" name="hobi"  id="membaca" value="membaca">membaca
+        </label>
+        <br>
+        <label for="melukis">
+         <input type="checkbox" name="hobi" id="melukis" value="melukis">melukis
+        </label>
+        <br>
+        <label for="berenang">
+            <input type="checkbox" name="hobi" id="berenang" value="berenang" checked>berenang
+        </label>
+        <br>
+        <label for="menari">
+            <input type="checkbox" name="hobi" id="menari" value="menari">menari 
+        </label>
+        <br>
+        <label for="olahraga">
+            <input type="checkbox" name="hobi" id="olahraga" value="olahraga">olahraga
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>liburan musim winter</legend>
+        <label for="negara">negara</label>
+        <select name="negara" id="negara">
+        <option value="--pilih negara--">--pilih negara--</option>
+          <option value="saudi arabian">saudi arabian</option>
+          <option value="malaysia">malaysia</option>
+          <option value="china">china</option>
+          <option value="jepang" selected>jepang</option>
+       </select>  
+    </fieldset>
+    <input type="reset" name="reset" id="reset" value="reset">
+    <input type="submit" name="submit" id="submit" value="send">
     </form>
 </body>
 </html>
